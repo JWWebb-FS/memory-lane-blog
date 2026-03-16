@@ -4,11 +4,11 @@ import { posts } from '../../posts';
 import Link from 'next/link';
 
 export default function Post() {
-  const router = useRouter();
-  const { id } = router.query;
+  let router = useRouter(); 
+  let { id } = router.query;
   
   // Find the specific post based on the ID in the URL
-  const post = posts.find((p) => p.id === id);
+  let post = posts.find((p) => p.id === id);
 
   if (!post) return <div className="text-center py-20">Post not found.</div>;
 
@@ -19,6 +19,16 @@ export default function Post() {
       </Link>
       <h1 className="text-4xl font-bold mb-2 tracking-tight">{post.title}</h1>
       <p className="text-zinc-400 mb-8">{post.date}</p>
+
+      {/* Added Image Logic Below */}
+      {post.image && (
+        <img 
+          src={post.image} 
+          alt={post.title} 
+          className="w-full h-auto mb-8 rounded-lg shadow-lg" 
+        />
+      )}
+
       <div className="prose dark:prose-invert leading-relaxed text-zinc-700 dark:text-zinc-300">
         {post.content}
       </div>
