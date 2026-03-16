@@ -22,7 +22,7 @@ export const posts = [
   id: "mtg-tracker-project", 
   title: "Beyond the Rulebook: Building a Custom MTG Tracker",
   date: "March 16, 2026",
-  image: "/emrakul.jpg",
+  image: "/images/emrakul.jpg",
   content: `As a developer and a Magic: The Gathering player, I often find that "official" tools don't always cover the way my playgroup actually plays. Whether it’s specific house rules or keeping track of card errata for my colorless deck, I needed something more tailored. 
 
 This week, I’ve been working on a custom MTG tracking app using React and Next.js. The goal is simple: create a clean interface that manages dynamic house rules and provides quick access to specific card clarifications that the standard apps might miss.
