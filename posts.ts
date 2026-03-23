@@ -41,7 +41,7 @@ Building this has been a great way to practice state management and routing in a
     id: "deploying-to-multiple-platforms",
     title: "The Reality of Deployment: Troubleshooting Vercel",
     date: "March 23, 2026",
-    image: "/deployment.jpg",
+    image: "/images/deployment.jpg",
     content:
       "Deploying a Next.js site isn't always as simple as clicking a button. This week, I ran into a common but frustrating hurdle while connecting my GitHub repository to Vercel: the 'No Next.js version detected' error. This usually happens when the deployment platform looks at the root of the repository but can't find the package.json file. In my case, I had to manually adjust the 'Root Directory' in the Vercel settings to point exactly to my project folder. Learning to manage these environment configurations is just as important as writing the code itself, as it ensures that the automated build pipeline can correctly install dependencies and execute the production build.",
   },
